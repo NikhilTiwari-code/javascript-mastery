@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript</title>
+</head>
+<body>
+    <h1>TODAY IS COLD</h1>
+    <button id="stop">Stop</button>
+</body>
+<script>
+
+   //  setTimeout function
+
+    function cold(){
+        console.log("The weather is cold outside");
+    }
+   
+    //setTimeout(cold,2000);
+
+//    setTimeout(function(){
+//      console.log("The weather is cold outside");
+//    },2000)
+   
+   const h1 = document.querySelector("h1")
+   function changeText (){
+       h1.innerText = "Evening with javascript";
+   }
+   const timer = setTimeout(changeText,3000);
+
+   document.getElementById("stop").addEventListener('click',function(){
+       clearTimeout(timer);
+       console.log("Timer stopped");
+       
+   })
+
+
+   //   setInterval function
+
+   const timer2 = setInterval(function(){
+      console.log("The weather is cold outside");
+      
+    
+   },1000);
+
+   clearInterval(timer2);
+
+
+
+
+
+
+
+    
+
+
+
+</script>
+</html>

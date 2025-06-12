@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Draw Circle on Click</title>
+    <style>
+        .circle {
+            position: absolute;
+            width: 20px;
+            height: 20px;
+            background-color: red;
+            border-radius: 50%;
+        }
+    </style>
+</head>
+<body>
+    <div id="owl" style="width: 100px; height: 100px; background-color: lightblue;">Click me</div>
+    <script>
+        var owl = document.getElementById('owl');
+
+        function drawCircle(x, y) {
+            var circle = document.createElement('div');
+            circle.className = 'circle';
+            circle.style.left = x + 'px';
+            circle.style.top = y + 'px';
+            document.body.appendChild(circle);
+        }
+
+        owl.addEventListener('click', function(e) {
+            console.log("You clicked on owl");
+            console.log(e.clientX);
+            console.log(e.clientY);
+            drawCircle(e.clientX, e.clientY);
+        }, false);
+    </script>
+</body>
+</html>

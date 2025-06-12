@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript</title>
+</head>
+
+<body>
+    <h1>TODAY IS COLD</h1>
+
+    <button id="start">Start</button>
+    <button id="stop">Stop</button>
+</body>
+<script>
+
+  
+const startBtn = document.getElementById("start");
+const stopBtn = document.getElementById("stop");
+
+let  timer ;
+startBtn.addEventListener('click',function(){
+    console.log("Timer started");
+     timer = setInterval(function(){
+        console.log("The weather is cold outside");
+    },1000);
+    
+})
+
+stopBtn.addEventListener('click',function(){
+    console.log("Timer stopped");
+    clearInterval(timer);
+})
+
+
+</script>
+</html>
