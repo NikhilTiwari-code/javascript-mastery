@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weatherly - Mobile Weather App</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <div class="weather-app">
+        <!-- Search Section -->
+        <div class="search-container">
+            <input type="text" class="search-input" placeholder="Search location...">
+            <button class="search-btn"><i class="fas fa-search"></i></button>
+        </div>
+
+        <!-- Current Weather -->
+        <div class="current-weather">
+            <div class="location">
+                <h1 class="city">New York</h1> 
+                <p class="date">Monday, 15 May 2023</p>
+            </div>
+            
+            <div class="weather-info">
+                <div class="temperature">22°C</div>
+                <div class="conditions">
+                    <img src="https://openweathermap.org/img/wn/02d@2x.png" alt="Weather Icon" class="weather-icon">
+                    <p class="description">Partly Cloudy</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Additional Weather Details -->
+        <div class="weather-details">
+            <div class="detail-item">
+                <i class="fas fa-tint"></i>
+                <div class="humidity-value">65%</div>
+                <div class="humidity-label">Humidity</div>
+            </div>
+            <div class="detail-item">
+                <i class="fas fa-wind"></i>
+                <div class="wind-speed">12 km/h</div>
+                <div class="wind-label">Wind Speed</div>
+            </div>
+            <div class="detail-item">
+                <i class="fas fa-thermometer-half"></i>
+                <div class="feels-like-value">18°C</div>
+                <div class="feels-like-label">Feels Like</div>
+            </div>
+        </div>
+
+       
+        </div>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>

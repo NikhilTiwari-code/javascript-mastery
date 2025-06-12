@@ -1,0 +1,84 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background: url('night-sky.jpg') no-repeat center center fixed; /* Background image */
+    background-size: cover; /* Ensure the image covers the entire background */
+    color: #fff;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+#container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent background */
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+}
+
+#button, #calculate {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px 10px;
+    margin: 1px 0;
+    background-color: #fff;
+    color: #212121;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    ;
+}
+
+#button:hover, #calculate:hover {
+    background-color: #f0f0f0;
+}
+
+#guide{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+input {
+    margin: 10px 0;
+    padding: 15px;
+    width: 250px;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    text-align: center;
+}
+
+button {
+    padding: 15px 30px;
+    margin: 20px 0;
+    background-color: #00ff00;
+    color: #212121;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #00cc00;
+}
+
+#result {
+    margin-top: 20px;
+    font-size: 24px;
+    color: #00ff00; /* Green color for result text */
+}

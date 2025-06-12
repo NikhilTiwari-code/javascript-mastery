@@ -1,0 +1,91 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+#main-container {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    text-align: center;
+}
+
+h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #6200ea;
+}
+
+/* Input Box Styles */
+.input-box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+#password {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    margin-right: 10px;
+}
+
+#copy {
+    padding: 10px 15px;
+    background-color: #6200ea;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+#copy:hover {
+    background-color: #3700b3;
+}
+
+/* Slider Styles */
+.slider {
+    margin-bottom: 20px;
+}
+
+.slider label {
+    font-size: 16px;
+    display: block;
+    margin-bottom: 10px;
+}
+
+#length-slider {
+    width: 100%;
+    cursor: pointer;
+}
+
+/* Checkbox Options Styles */
+.options {
+    text-align: left;
+}
+
+.big, .numbers {
+    margin-bottom: 10px;
+}
+
+.big label, .numbers label {
+    font-size: 16px;
+    margin-left: 10px;
+}
+
+input[type="checkbox"] {
+    cursor: pointer;
+}
