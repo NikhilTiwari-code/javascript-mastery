@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chai with Javascript | DOM</title>
+</head>
+
+<body style="background-color: #212121; color: #fff;">
+    
+    <ul class="language">
+        <li>Javascript</li>
+    </ul>
+</body>
+<script>
+   
+   // create a function to add language
+
+   function addLanguage(langName){
+    const li = document.createElement('li');
+    li.innerHTML = `${langName}`
+    document.querySelector('.language').appendChild(li)// adds to the last element
+}
+    addLanguage("python")
+    addLanguage("typescript")
+   
+
+    // Second optimised  method to add language
+
+    //console.log(document.querySelector('.language').lastElementChild);
+    
+    function addAnotherLanguage(language){
+        const li = document.createElement('li');
+        const addText = document.createTextNode(`${language}`)
+        li.appendChild(addText)
+        document.querySelector('.language').appendChild(li)// adds to the last element
+
+    }
+
+    addAnotherLanguage("c++")
+
+
+ // EDITING THE DOM
+
+   const firsLanguage = document.querySelector('.language').firstElementChild
+    console.log(firsLanguage);
+    const newLi = document.createElement('li');
+    const newText = document.createTextNode("Java");
+    newLi.appendChild(newText)
+    firsLanguage.replaceWith(newLi)
+
+  // REMOVING THE DOM
+
+  const lastLanguage = document.querySelector('.language').lastElementChild
+  console.log(lastLanguage);
+  lastLanguage.remove()
+
+
+  
+   
+    
+
+
+
+    
+
+
+
+
+
+</script>
+</html>

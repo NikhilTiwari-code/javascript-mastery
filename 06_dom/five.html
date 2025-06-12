@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chai with Javascript | DOM</title>
+</head>
+<body style="background-color: #212121; color: #fff;">
+    <ul class="language">
+        <li>Javascript</li>
+        <li>typescript</li>
+        <li></li>
+    </ul>
+</body>
+<script>
+   
+
+
+ // create a function that takes two arguments and replace the selected element with the second element
+ 
+//  const newLi = document.createElement('li');
+
+//   function replaceElement(firstElement, secondElement) {
+//     const firstElement = document.querySelector('.language').firstElementChild
+//     console.log(firstElement);
+//    // const newLi = document.createElement('li');
+//     const newText = document.createTextNode("ruby");
+//     newLi.appendChild(newText)
+//     firstElement.replaceWith(newLi)
+//   }
+//   replaceElement(firsLanguage, newLi)
+ 
+    
+
+const ul = document.querySelector('.language');
+const listItems = ul.getElementsByTagName('li');
+
+    // Function to replace an existing language with a new one
+    function replaceLanguage(oldLanguage, newLanguage) {
+        // Get all the <li> elements
+      
+
+        const listItems = ul.getElementsByTagName('li');
+        
+        // Loop through the list items
+        for (let i = 0; i < listItems.length; i++) {
+            if (listItems[i].textContent === oldLanguage) {
+                // Create a new <li> element with the new language
+                const newLi = document.createElement('li');
+                const text = document.createTextNode(newLanguage);
+                newLi.appendChild(text);
+                
+                // Replace the old <li> with the new one
+                listItems[i].replaceWith(newLi);
+                break; // Exit the loop once the replacement is done
+            }
+        }
+
+    }
+    replaceLanguage("Javascript", "Java");
+    replaceLanguage("typescript", "C#");
+   
+
+
+</script>
+</html>

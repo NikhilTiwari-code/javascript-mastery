@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Document Object Model</title>
+    <style>
+        .bg-black{
+            background-color: #212121;
+            color: #fff;
+        }
+    </style>
+</head>
+
+
+<body class="bg-black">
+    
+    <h1 id="heading">This is a heading</h1>
+    <p>This is a <span>paragraph1</span> paragraph2</p>
+    <h2 class="title">this is the heading of h2</h2>
+    <h2 class="title">this is the heading of h2</h2>
+    <h2 class="title">this is the heading of h2</h2>
+    <h2 class="title">this is the heading of h2</h2>
+
+    <ul>
+        <li>one</li>
+        <li>two</li>
+        <li>three</li>
+        <li>four</li>
+    </ul>
+
+//+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ learning about dom selectors +++++++++++++++
+
+
+    // 1. getElementById => document.getElementById("id")
+    // 2. getElementsByClassName => document.getElementsByClassName("class")
+    // 3. getElementsByTagName => document.getElementsByTagName("tag")
+    // 4. querySelector => document.querySelector("selector")  =>( if id = "#id" and class = ".class")
+    // 5. querySelectorAll => document.querySelectorAll("selector")
+    
+    const h1 =document.getElementById("heading")
+    //console.log(h1);
+    
+    console.log(h1.innerHTML);
+    h1.innerHTML = "This is a new heading"
+    
+    h1.style.color = "red";
+    h1.style.backgroundColor = "yellow";
+    
+    
+     const title = document.getElementsByClassName("title")
+     //console.log(title)                   // returns html collection
+     Array.from(title).forEach((element) => {
+        element.style.color = "blue"
+     })
+     //console.log(typeof title);
+     
+     
+     const p = document.getElementsByTagName("p")
+     //console.log(p)               
+    
+     const ul = document.querySelector("ul")
+     //console.log( ul)
+    
+     ul.querySelector("li").style.color = "red"
+      
+    
+     const lists = document.querySelectorAll("li")
+     console.log(lists)  // returns node list
+    
+     //console.log(lists[1].innerHTML);
+    
+    // lists[0].style.color = "green"
+    
+    // lists .forEach((list) => {
+    //     list.style.color = "blue"
+    //     list.style.backgroundColor = "pink"
+    //     list.style.padding = "10px"
+    //     list.style.animation = "animate 1s ease-in-out infinite"
+    // })
+    
+    
+    
+    
+     
+    
+    
+    
+    
+    
+
+    </script>
+ 
+
+    
+</body>
+</html>

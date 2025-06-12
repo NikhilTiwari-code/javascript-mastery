@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM | Chai aur code</title>
+</head>
+
+<body style="background-color: #212121; color: #fff;">
+    <div class="parent">
+        <!-- this is a comment -->
+        <div class="day">Monday</div>
+        <div class="day">Tuesday</div>
+        <div class="day">Wednesday</div>
+        <div class="day">Thursday</div>
+        <div class="day">Friday</div>
+        <div class="day">Saturday</div>
+        <div class="day">Sunday</div>
+    </div>
+</body>
+<script>
+    const parent = document.querySelector(".parent")
+    //  console.log(parent);
+    //  console.log(parent.children);// provide HTML collection
+    //  console.log(parent.children[2]);// provide the list of children
+    //  console.log(parent.children[2].textContent);// provide the text content of children
+    //  console.log(parent.firstElementChild);// provide the html content of children
+    //  console.log(parent.lastElementChild);
+    //  console.log(parent.childElementCount);
+    //  console.log(parent.firstElementChild.nextElementSibling);
+
+
+    //  Array.from(parent.children).forEach((element) => {
+    //     console.log(element);
+    //     element.style.color = "red";
+    //     element.style.backgroundColor = "green";
+
+    //  })
+
+
+    //  parent.children[2].style.color = "yellow";
+
+    //  const dayOne = document.querySelector(".day");
+    //  dayOne.style.color = "yellow";
+    //  dayOne.style.backgroundColor = "green";
+
+    //  console.log(dayOne.parentElement);
+    //  console.log(dayOne.nextSibling); // provides the next sibling(may be text or element)
+    //  console.log(dayOne.nextElementSibling); // provides the next element sibling
+
+     console.log(parent.childNodes);
+     
+     
+
+
+   
+</script>
+
+</html>
