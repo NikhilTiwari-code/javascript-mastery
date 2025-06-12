@@ -1,0 +1,82 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Closure aur chai</title>
+</head>
+<body style="background-color: #313131;">
+    <button id="orange">Orange</button>
+    <button id="green">Green</button>
+</body>
+ <script>
+         /*A closure is the combination of a function bundled together (enclosed) 
+             with references to 
+            its surrounding state (the lexical environment).
+
+           closure gives a function access to its outer scope.
+           closures are created every time a function is created, at function creation time.
+           To use a closure, simply define a function inside another function and expose it.     */
+
+           //A closure allows an inner function to access variables from an outer (parent) function,
+           //  even after the parent function has completed.
+
+           
+//            function outer(){
+//     let username = "umeshwar"
+//     //console.log("OUTER", secret);// parent can not  access child property
+//     function inner(){
+//         let secret = "my123"
+//         console.log("inner",username ); // child can acces parent property
+//     }
+//     function innerTwo(){
+//         console.log("innerTwo", username);
+//        // console.log(secret); // sibling can not access sibling property
+//     }
+//     inner()
+//     innerTwo()
+  
+// }
+// //outer()
+// // console.log("TOO OUTER", username); // Not accessible
+
+// function makeFunc() {
+//         const name = "Mozilla";
+//         function displayName() {
+//             console.log(name);
+//         }
+//         return displayName;   => (closure is created here 
+                                  //  and memory created is allocated for displayName function
+                                    //   here lexical scope of displayName is makeFunc 
+                                    //   lexical scope of makeFunc jata hai na ki kewal function ka executional context)
+
+//     }
+
+//     const myFunc = makeFunc();
+//    // myFunc();
+
+</script>
+
+<script>
+   // document.getElementById("orange").onclick = function(){
+        //     document.body.style.backgroundColor = `orange`
+        // }
+        // document.getElementById("green").onclick = function(){
+        //     document.body.style.backgroundColor = `green`
+        // }
+
+        function clickHandler(color){
+            // document.body.style.backgroundColor = `${color}`
+
+            return function(){
+                document.body.style.backgroundColor = `${color}`
+            }
+        }
+
+        document.getElementById('orange').onclick = clickHandler("orange")
+        document.getElementById('green').onclick = clickHandler("green")
+
+        // document.getElementById('orange').onclick = function() { clickHandler("orange"); }
+        // document.getElementById('green').onclick = function() { clickHandler("green"); }
+</script>
