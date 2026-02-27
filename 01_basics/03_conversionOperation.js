@@ -4,9 +4,6 @@ let score = "INDIAN";
 // console.log( typeof score);
 // console.log(typeof (score));
 
-
-
-
 let newNumber = Number(100)
 //console.log(newNumber);  // 100
 
