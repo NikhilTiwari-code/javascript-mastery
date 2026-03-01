@@ -10,7 +10,7 @@ const values = coding.forEach( (item) => {
 
 const newNums = [1,2,3,4,5,6,7,8,9,10]
 
- const nums = newNums.map( (item) => {
+const nums = newNums.map( (item) => {
    // console.log(item);
     return item
 } )
@@ -42,7 +42,7 @@ const books = [
     { title: 'Book Nine', genre: 'Non-Fiction', publish: 1981, edition: 1989 },
   ];
 
-  let userBooks = books.filter( (bk) => bk.genre === 'History')
+let userBooks = books.filter( (bk) => bk.genre === 'History')
 
   userBooks = books.filter( (bk) => { 
     return bk.publish >= 1995 && bk.genre === "History"

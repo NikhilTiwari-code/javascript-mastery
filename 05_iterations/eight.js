@@ -23,8 +23,6 @@ const shoppingCart  = [
     itemName:"mug",
     price :2000,
 }
-
- 
 ] 
 
 

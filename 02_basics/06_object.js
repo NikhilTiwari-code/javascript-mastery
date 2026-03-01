@@ -1,12 +1,10 @@
 // const user1 = function () {
-
 //     console.log(this.username);
 // };
 
 // const myObject = {
 //     username: "hiteshwar",
 //     user : user1,    //   in object we can also give reference of functions
-
 // }
 
 // myObject.user()

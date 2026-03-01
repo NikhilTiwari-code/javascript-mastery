@@ -1,5 +1,3 @@
-// functions in js
-
 
 
 //global scope

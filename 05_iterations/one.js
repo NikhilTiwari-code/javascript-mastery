@@ -1,12 +1,11 @@
-// loops
+// loops or iterators 
 
 
-//for 
+//  for loop
 
 
 
 //   for (let index = 0; index < 10; index++) {
-    
 //    console.log(index);
 
 //    for(let j =1; j<=10; j++){
@@ -14,8 +13,7 @@
 //       if (j==5) {
 //          console.log("hello :5");
          
-         
-//       }
+//}
      
 // }
 // }
@@ -63,8 +61,7 @@ for (let i = 0; i < myArray.length; i++) {
 for (let index = 1; index < 10; index++) {
    if (index==5) {
       console.log("detected");
-      break;
-      
+      break;  
    }
    console.log(index);
    

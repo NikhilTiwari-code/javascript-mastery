@@ -28,8 +28,7 @@ console.log(user)
 
 user.greeting = function (){
     console.log(`hello user ,${this.fullName}`)
-
-
+    
 }
 
 console.log(user.greeting())

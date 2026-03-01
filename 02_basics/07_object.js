@@ -20,12 +20,10 @@ const apiResponse = {
 
 // for (const element of users) {
 //     console.log(element);
-    
 //     console.log(`name is ${element.name} and id is ${element.id}`);
-    
-    
-// }
 
+// }
+ 
 
 const {
     data: {

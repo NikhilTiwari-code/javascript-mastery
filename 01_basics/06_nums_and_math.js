@@ -1,10 +1,6 @@
 
 // Description: Numbers and Math in JavaScript
 
-
-
-
-
 const score  = 100.789;
 
 
@@ -36,7 +32,6 @@ console.log(parseFloat(stringNumber)); // convert string to float
 // console.log(Math.pow(2,3));
 // console.log(Math.min(1,2,3,4,5,6,7,8,9,10));
 // console.log(Math.max(1,2,3,4,5,6,7,8,9,10));
-
 
 
 //console.log(Math.random());

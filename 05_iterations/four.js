@@ -2,14 +2,13 @@ const myObject = {
     js:"javascript",
     php:"php",
     ts :"typescript",
-
- }
+}
 
 for (const key in myObject) {
         //console.log(key);
         //console.log(myObject[key]);
         
-    }
+}
 
 const programming = ["javascript","php","typescript"]    //array iterating 
  
